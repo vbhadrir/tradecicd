@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE cache SYSTEM "cachespec.dtd">
+
+<!--
+     DynaCache specification for WebSphere performance application.
+     Trade provides a sample application for DynaCache usage and configuration.
+    -->
+<cache>
+
+<!-- Cache entry for marketSummary.jsp. This jsp gets invalidated on a timeout as well
+     as when Trade database is reset -->
+        <cache-entry>
+                <class>servlet</class>
+                <name>/marketSummary.jsp</name>
+                <property name="consume-subfragments">true</property>
+                <property name="EdgeCacheable">true</property>
+                <cache-id>
+                        <priority>3</priority>
+                        <timeout>60</timeout>
+                </cache-id>
+                <dependency-id>MarketSummary
+                </dependency-id>
+        </cache-entry>
+</cache>
