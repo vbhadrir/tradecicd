@@ -1,2 +1,2 @@
-# tradecicd
-# This is a test for Tradlite
+# tradecicds
+# This the continouse intergration test for tradelite on OpenShift
